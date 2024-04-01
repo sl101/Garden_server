@@ -33,7 +33,7 @@ app.get("/", (req, res) => {
 	//	status: 200,
 	//	message: `\n\nServer started on ${PORT} port...`,
 	//});
-	res.render(`\n\nServer started on ${PORT} port...`);
+	res.render(`\nServer started on ${PORT} port...`);
 });
 
 //const start = () => {
