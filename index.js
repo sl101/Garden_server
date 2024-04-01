@@ -26,15 +26,19 @@ const app = express();
 //app.use('/sale', sale);
 //app.use('/order', order);
 
+app.use(express.static(__dirname + "/public"));
 app.use(express.json());
 
 app.get("/", (req, res) => {
-	//return res.status(200).send({
-	//	status: 200,
-	//	message: `\n\nServer started on ${PORT} port...`,
-	//});
-	res.send(`\nServer started on ${PORT} port...`);
+	res.sendFile("public/index.html", { root: __dirname });
 });
+
+//app.get("/", (req, res) => {
+//return res.status(200).send({
+//	status: 200,
+//	message: `\n\nServer started on ${PORT} port...`,
+//});
+//});
 
 //const start = () => {
 //	try {

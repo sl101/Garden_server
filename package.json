@@ -1,5 +1,5 @@
 {
-  "name": "project_backend",
+  "name": "gerden_server",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,7 +8,7 @@
     "dev": "nodemon index.js",
     "start": "node index.js"
   },
-  "author": "hayk",
+  "author": "sl101",
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
