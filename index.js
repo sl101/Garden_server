@@ -29,10 +29,11 @@ const app = express();
 app.use(express.json());
 
 app.get("/", (req, res) => {
-	return res.status(200).send({
-		status: 200,
-		message: `\n\nServer started on ${PORT} port...`,
-	});
+	//return res.status(200).send({
+	//	status: 200,
+	//	message: `\n\nServer started on ${PORT} port...`,
+	//});
+	res.render(`\n\nServer started on ${PORT} port...`);
 });
 
 //const start = () => {
